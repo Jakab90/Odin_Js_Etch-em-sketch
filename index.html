@@ -7,25 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ETCH-EM-SKETCH</title>
         <script src="app.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
-    <body >
-        <div class="container"
-                style= "justify-content: center; 
-                        align-items: center;
-                        display: grid; 
-                        grid-template-rows: repeat(16, auto);
-                        grid-template-columns: repeat(16, 100px); 
-                        background-color: #eeeeee;"> 
+    <body>
+        <div class="sliderContainer">
+            <input type="range" min="2" max="100" value="16" class="slider" id="myRange">
+        </div>
+        <div class="container" id="content"> 
         </div>
     </body>
-<style>
-    div:hover{
-        background-color: black;
-        
-    }
-</style>
-
 </html>
 
 
