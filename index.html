@@ -9,13 +9,22 @@
         <script src="app.js" defer></script>
         <link rel="stylesheet" href="styles.css">
     </head>
-
+    
     <body>
-        <div class="sliderContainer">
-            <input type="range" min="2" max="100" value="16" class="slider" id="myRange">
-        </div>
-        <div class="container" id="content"> 
-        </div>
+        <h1>ETCH SKETCH'EM </h1>
+            <div class="containerContainer">
+                <div class="sliderContainer">
+                    <input type="range" min="2" max="100" value="16" class="slider" id="myRange">
+                    <p>Grid length: <span id="outPut"></span></p>
+                </div>
+                <div class="buttonContainer">
+                    <button type="button" id="clear">Clear</button>
+                    <button type="button" id="start">Start!</button>
+                    <button type="button" id="black">Black</button>
+                    <button type="button" id="rainbow">Rainbow</button>
+                </div>
+            </div>
+        <div class="container" id="content"> </div>
     </body>
 </html>
 
