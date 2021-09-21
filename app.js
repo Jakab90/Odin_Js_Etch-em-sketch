@@ -6,15 +6,17 @@ function draw(){
     document.getElementById("content").innerHTML = "";
     let gridArea = gridNumber * gridNumber;
     const containerDiv = document.querySelector(".container");
-
+    let w = 960 /gridNumber;
     for (let i = 1; i <= gridArea; i++) {
         let div = document.createElement("div");
+        div.style.setProperty('width', w +"px");
         div.classList.add("plexel");
         containerDiv.appendChild(div);
         div.addEventListener("mouseover", function moused() { 
             div.style.setProperty('background-color', 'black');
         ;});
     }
+
 }
 
 var slider = document.getElementById("myRange");
