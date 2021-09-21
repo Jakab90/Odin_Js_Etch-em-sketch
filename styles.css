@@ -1,21 +1,22 @@
 
 .container {
-    height: 540px;
-    width: 540px;
+    height: 520px;
+    width: 520px;
     display: flex;
     flex-wrap: wrap;
+    padding: 8px;
 }
 
 .plexel {
-    /* display: flex;
-    flex: 1 1 auto; */
     background-color: aliceblue;
 }
 
 .sliderContainer {
-    width: 100px;
+    width: 300px;
     display: flex;
     flex-direction: column;
+    color: white;
+    text-shadow: red;
     
 }
 
@@ -23,15 +24,11 @@
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
-    height: 25px;
+    height: 12px;
     border-radius: 5px;
     background: #d3d3d3;
     outline: none;
-    opacity: 0.7;
-}
-
-.slider:hover {
-    opacity: 1;
+    cursor: default;
 }
 
 .slider::-webkit-slider-thumb {
@@ -50,20 +47,44 @@
     border-radius: 50%;
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
-  }
+}
 
-  body {
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url("https://puttingittogetherwithgeorge.umwblogs.org/files/2014/09/cropped-seurat-a-sunday-afternoon-on-the-island-of-la-grande-jatte.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  }
+}
 
-  .containerContainer {
+.containerContainer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+}
+
+p {
+    width: 300px;
+    font-size: 20px;
+    flex-direction: column;
+    font-style: bold;
+}
+
+span {
+    font-size: 20px;
+}
+  
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

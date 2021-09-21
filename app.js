@@ -10,7 +10,7 @@ function draw(){
     document.getElementById("content").innerHTML = "";
     let gridArea = gridNumber * gridNumber;
     const containerDiv = document.querySelector(".container");
-    let w = 540 /gridNumber;
+    let w = 520/gridNumber;
     for (let i = 1; i <= gridArea; i++) {
         let div = document.createElement("div");
         div.style.setProperty('width', w +"px");
