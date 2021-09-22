@@ -1,10 +1,10 @@
 
 .container {
-    height: 520px;
-    width: 520px;
+    height: 540px;
+    width: 540px;
     display: flex;
     flex-wrap: wrap;
-    padding: 8px;
+    /* padding: 8px; */
 }
 
 .plexel {
